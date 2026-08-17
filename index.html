@@ -175,9 +175,9 @@
 
   .content{
     position:absolute;
-    top:50%;
+    top:9%;
     left:50%;
-    transform:translate(-50%, -50%);
+    transform:translateX(-50%);
     width:min(90%, 900px);
     text-align:center;
     z-index:20;
@@ -186,8 +186,8 @@
   }
 
   @keyframes rise{
-    from{ opacity:0; transform:translate(-50%, -46%); }
-    to{ opacity:1; transform:translate(-50%, -50%); }
+    from{ opacity:0; transform:translateX(-50%) translateY(10px); }
+    to{ opacity:1; transform:translateX(-50%) translateY(0); }
   }
 
   .content h1{
@@ -219,8 +219,9 @@
   }
 
   @media (max-width: 640px){
-    .oak{ height:min(34vh, 280px); }
-    .content{ top:10%; }
+    .oak{ height:min(30vh, 260px); }
+    .content{ top:7%; }
+    .content h1{ font-size:clamp(1.7rem, 8vw, 2.4rem); }
   }
 
 
